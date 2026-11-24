@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050807;
+    color: #FAF6EE;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Luxury Jaali / Mandala Background Pattern */
+.bg-jaali {
+  background-image: radial-gradient(circle at 50% 50%, rgba(201, 162, 75, 0.06) 1px, transparent 1px),
+                    radial-gradient(circle at 0% 0%, rgba(201, 162, 75, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px, 16px 16px;
+}
+
+.bg-mandala {
+  background-image: radial-gradient(circle, rgba(201, 162, 75, 0.08) 1px, transparent 1px),
+                    radial-gradient(circle, rgba(15, 44, 35, 0.5) 1px, transparent 1px);
+  background-size: 40px 40px, 20px 20px;
+}
+
+/* Luxury Card Glass Effect */
+.luxury-glass {
+  background: linear-gradient(135deg, rgba(12, 36, 29, 0.85) 0%, rgba(6, 22, 17, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 162, 75, 0.22);
+}
+
+.luxury-glass-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-glass-hover:hover {
+  border-color: rgba(201, 162, 75, 0.55);
+  box-shadow: 0 10px 30px -5px rgba(201, 162, 75, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050807;
+}
+::-webkit-scrollbar-thumb {
+  background: #25382F;
+  border-radius: 4px;
+  border: 1px solid rgba(201, 162, 75, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A24B;
+}
